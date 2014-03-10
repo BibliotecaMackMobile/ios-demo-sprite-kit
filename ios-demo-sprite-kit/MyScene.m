@@ -9,6 +9,7 @@
 #import "MyScene.h"
 #import "AnimatedSpriteScene.h"
 #import "DragAndDropScene.h"
+#import "MoveActionScene.h"
 
 @implementation MyScene
 
@@ -61,6 +62,11 @@
     else if ([node.name isEqualToString:@"dragAndDrop"])
     {
         scene = [[DragAndDropScene alloc] initWithSize:self.size];
+        [self.scene.view presentScene:scene];
+    }
+    else if ([node.name isEqualToString:@"moveAction"])
+    {
+        scene = [[MoveActionScene alloc] initWithSize:self.size];
         [self.scene.view presentScene:scene];
     }
     

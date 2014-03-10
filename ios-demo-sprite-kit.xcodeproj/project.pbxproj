@@ -30,6 +30,7 @@
 		289B8CE018CACD9600017FBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B8CBB18CACD9600017FBF /* UIKit.framework */; };
 		289B8CE818CACD9600017FBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 289B8CE618CACD9600017FBF /* InfoPlist.strings */; };
 		289B8CEA18CACD9600017FBF /* ios_demo_sprite_kitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B8CE918CACD9600017FBF /* ios_demo_sprite_kitTests.m */; };
+		75AD61DB18CDE6100038FDB6 /* MoveActionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD61DA18CDE6100038FDB6 /* MoveActionScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		289B8CE518CACD9600017FBF /* ios-demo-sprite-kitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-demo-sprite-kitTests-Info.plist"; sourceTree = "<group>"; };
 		289B8CE718CACD9600017FBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		289B8CE918CACD9600017FBF /* ios_demo_sprite_kitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_demo_sprite_kitTests.m; sourceTree = "<group>"; };
+		75AD61D918CDE6100038FDB6 /* MoveActionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveActionScene.h; sourceTree = "<group>"; };
+		75AD61DA18CDE6100038FDB6 /* MoveActionScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveActionScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				289B8CD118CACD9600017FBF /* MyScene.h */,
 				289B8CD218CACD9600017FBF /* MyScene.m */,
 				28162A5F18CBFE2C007F89B1 /* AnimatedSpriteScene.h */,
+				75AD61D918CDE6100038FDB6 /* MoveActionScene.h */,
+				75AD61DA18CDE6100038FDB6 /* MoveActionScene.m */,
 				28162A6018CBFE2C007F89B1 /* AnimatedSpriteScene.m */,
 				28162A6818CC297E007F89B1 /* DragAndDropScene.h */,
 				28162A6918CC297E007F89B1 /* DragAndDropScene.m */,
@@ -290,6 +295,7 @@
 			files = (
 				28162A6118CBFE2C007F89B1 /* AnimatedSpriteScene.m in Sources */,
 				289B8CD318CACD9600017FBF /* MyScene.m in Sources */,
+				75AD61DB18CDE6100038FDB6 /* MoveActionScene.m in Sources */,
 				289B8CD018CACD9600017FBF /* ViewController.m in Sources */,
 				28162A6A18CC297E007F89B1 /* DragAndDropScene.m in Sources */,
 				289B8CCA18CACD9600017FBF /* AppDelegate.m in Sources */,
