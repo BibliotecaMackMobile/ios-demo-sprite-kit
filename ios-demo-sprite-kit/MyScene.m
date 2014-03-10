@@ -7,6 +7,8 @@
 //
 
 #import "MyScene.h"
+#import "AnimatedSpriteScene.h"
+#import "DragAndDropScene.h"
 
 @implementation MyScene
 
@@ -14,16 +16,28 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        animatedSpriteButton = [SKSpriteNode spriteNodeWithImageNamed:@"animatedSprite"];
+        dragAndDropButton = [SKSpriteNode spriteNodeWithImageNamed:@"dragAndDrop"];
+        moveActionButton = [SKSpriteNode spriteNodeWithImageNamed:@"moveAction"];
+        physicsSimulationButton = [SKSpriteNode spriteNodeWithImageNamed:@"physicsSimulation"];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        animatedSpriteButton.name = @"animatedSprite";
+        dragAndDropButton.name = @"dragAndDrop";
+        moveActionButton.name = @"moveAction";
+        physicsSimulationButton.name = @"physicsSimulation";
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        animatedSpriteButton.position = CGPointMake(animatedSpriteButton.size.width / 2, self.size.height / 2 + animatedSpriteButton.size.height / 2);
         
-        [self addChild:myLabel];
+        dragAndDropButton.position = CGPointMake(self.size.width - dragAndDropButton.size.width / 2, self.size.height / 2 + dragAndDropButton.size.height / 2);
+        
+        moveActionButton.position = CGPointMake(moveActionButton.size.width / 2, self.size.height / 2 - moveActionButton.size.height / 2);
+        
+        physicsSimulationButton.position = CGPointMake(self.size.width - physicsSimulationButton.size.width / 2, self.size.height / 2 - physicsSimulationButton.size.height / 2);
+        
+        [self addChild:animatedSpriteButton];
+        [self addChild:dragAndDropButton];
+        [self addChild:moveActionButton];
+        [self addChild:physicsSimulationButton];
     }
     return self;
 }
@@ -31,6 +45,26 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInNode:self];
+    SKNode *node = [self nodeAtPoint:location];
+    
+    NSLog(@"%@", node.name);
+    
+    SKScene *scene;
+    
+    if ([node.name isEqualToString:@"animatedSprite"])
+    {
+        scene = [[AnimatedSpriteScene alloc] initWithSize:self.size];
+        [self.scene.view presentScene:scene];
+    }
+    else if ([node.name isEqualToString:@"dragAndDrop"])
+    {
+        scene = [[DragAndDropScene alloc] initWithSize:self.size];
+        [self.scene.view presentScene:scene];
+    }
+    
+    /*
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
@@ -44,6 +78,7 @@
         
         [self addChild:sprite];
     }
+     */
 }
 
 -(void)update:(CFTimeInterval)currentTime {

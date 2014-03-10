@@ -9,5 +9,11 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface MyScene : SKScene
+{
+    SKSpriteNode *animatedSpriteButton;
+    SKSpriteNode *dragAndDropButton;
+    SKSpriteNode *moveActionButton;
+    SKSpriteNode *physicsSimulationButton;
+}
 
 @end

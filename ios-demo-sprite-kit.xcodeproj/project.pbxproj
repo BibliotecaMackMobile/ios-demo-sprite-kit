@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28162A5B18CBE838007F89B1 /* animatedSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 28162A5718CBE838007F89B1 /* animatedSprite.png */; };
+		28162A5C18CBE838007F89B1 /* dragAndDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 28162A5818CBE838007F89B1 /* dragAndDrop.png */; };
+		28162A5D18CBE838007F89B1 /* moveAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 28162A5918CBE838007F89B1 /* moveAction.png */; };
+		28162A5E18CBE838007F89B1 /* physicsSimulation.png in Resources */ = {isa = PBXBuildFile; fileRef = 28162A5A18CBE838007F89B1 /* physicsSimulation.png */; };
+		28162A6118CBFE2C007F89B1 /* AnimatedSpriteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 28162A6018CBFE2C007F89B1 /* AnimatedSpriteScene.m */; };
+		28162A6518CC1F6D007F89B1 /* BearImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 28162A6418CC1F6D007F89B1 /* BearImages.atlas */; };
+		28162A6A18CC297E007F89B1 /* DragAndDropScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 28162A6918CC297E007F89B1 /* DragAndDropScene.m */; };
 		289B8CB818CACD9600017FBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B8CB718CACD9600017FBF /* Foundation.framework */; };
 		289B8CBA18CACD9600017FBF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B8CB918CACD9600017FBF /* CoreGraphics.framework */; };
 		289B8CBC18CACD9600017FBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B8CBB18CACD9600017FBF /* UIKit.framework */; };
@@ -17,7 +24,6 @@
 		289B8CCD18CACD9600017FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289B8CCB18CACD9600017FBF /* Main.storyboard */; };
 		289B8CD018CACD9600017FBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B8CCF18CACD9600017FBF /* ViewController.m */; };
 		289B8CD318CACD9600017FBF /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B8CD218CACD9600017FBF /* MyScene.m */; };
-		289B8CD518CACD9600017FBF /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 289B8CD418CACD9600017FBF /* Spaceship.png */; };
 		289B8CD718CACD9600017FBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289B8CD618CACD9600017FBF /* Images.xcassets */; };
 		289B8CDE18CACD9600017FBF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B8CDD18CACD9600017FBF /* XCTest.framework */; };
 		289B8CDF18CACD9600017FBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289B8CB718CACD9600017FBF /* Foundation.framework */; };
@@ -37,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28162A5718CBE838007F89B1 /* animatedSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatedSprite.png; sourceTree = "<group>"; };
+		28162A5818CBE838007F89B1 /* dragAndDrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dragAndDrop.png; sourceTree = "<group>"; };
+		28162A5918CBE838007F89B1 /* moveAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moveAction.png; sourceTree = "<group>"; };
+		28162A5A18CBE838007F89B1 /* physicsSimulation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = physicsSimulation.png; sourceTree = "<group>"; };
+		28162A5F18CBFE2C007F89B1 /* AnimatedSpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedSpriteScene.h; sourceTree = "<group>"; };
+		28162A6018CBFE2C007F89B1 /* AnimatedSpriteScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedSpriteScene.m; sourceTree = "<group>"; };
+		28162A6418CC1F6D007F89B1 /* BearImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BearImages.atlas; sourceTree = "<group>"; };
+		28162A6818CC297E007F89B1 /* DragAndDropScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragAndDropScene.h; sourceTree = "<group>"; };
+		28162A6918CC297E007F89B1 /* DragAndDropScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragAndDropScene.m; sourceTree = "<group>"; };
 		289B8CB418CACD9600017FBF /* ios-demo-sprite-kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-demo-sprite-kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		289B8CB718CACD9600017FBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		289B8CB918CACD9600017FBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,7 +68,6 @@
 		289B8CCF18CACD9600017FBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		289B8CD118CACD9600017FBF /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		289B8CD218CACD9600017FBF /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		289B8CD418CACD9600017FBF /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		289B8CD618CACD9600017FBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		289B8CDC18CACD9600017FBF /* ios-demo-sprite-kitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-demo-sprite-kitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		289B8CDD18CACD9600017FBF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -121,6 +135,7 @@
 		289B8CBF18CACD9600017FBF /* ios-demo-sprite-kit */ = {
 			isa = PBXGroup;
 			children = (
+				28162A6418CC1F6D007F89B1 /* BearImages.atlas */,
 				289B8CC818CACD9600017FBF /* AppDelegate.h */,
 				289B8CC918CACD9600017FBF /* AppDelegate.m */,
 				289B8CCB18CACD9600017FBF /* Main.storyboard */,
@@ -128,7 +143,14 @@
 				289B8CCF18CACD9600017FBF /* ViewController.m */,
 				289B8CD118CACD9600017FBF /* MyScene.h */,
 				289B8CD218CACD9600017FBF /* MyScene.m */,
-				289B8CD418CACD9600017FBF /* Spaceship.png */,
+				28162A5F18CBFE2C007F89B1 /* AnimatedSpriteScene.h */,
+				28162A6018CBFE2C007F89B1 /* AnimatedSpriteScene.m */,
+				28162A6818CC297E007F89B1 /* DragAndDropScene.h */,
+				28162A6918CC297E007F89B1 /* DragAndDropScene.m */,
+				28162A5718CBE838007F89B1 /* animatedSprite.png */,
+				28162A5818CBE838007F89B1 /* dragAndDrop.png */,
+				28162A5918CBE838007F89B1 /* moveAction.png */,
+				28162A5A18CBE838007F89B1 /* physicsSimulation.png */,
 				289B8CD618CACD9600017FBF /* Images.xcassets */,
 				289B8CC018CACD9600017FBF /* Supporting Files */,
 			);
@@ -240,9 +262,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28162A5E18CBE838007F89B1 /* physicsSimulation.png in Resources */,
+				28162A5D18CBE838007F89B1 /* moveAction.png in Resources */,
 				289B8CC418CACD9600017FBF /* InfoPlist.strings in Resources */,
+				28162A6518CC1F6D007F89B1 /* BearImages.atlas in Resources */,
 				289B8CD718CACD9600017FBF /* Images.xcassets in Resources */,
-				289B8CD518CACD9600017FBF /* Spaceship.png in Resources */,
+				28162A5C18CBE838007F89B1 /* dragAndDrop.png in Resources */,
+				28162A5B18CBE838007F89B1 /* animatedSprite.png in Resources */,
 				289B8CCD18CACD9600017FBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28162A6118CBFE2C007F89B1 /* AnimatedSpriteScene.m in Sources */,
 				289B8CD318CACD9600017FBF /* MyScene.m in Sources */,
 				289B8CD018CACD9600017FBF /* ViewController.m in Sources */,
+				28162A6A18CC297E007F89B1 /* DragAndDropScene.m in Sources */,
 				289B8CCA18CACD9600017FBF /* AppDelegate.m in Sources */,
 				289B8CC618CACD9600017FBF /* main.m in Sources */,
 			);
@@ -476,6 +504,7 @@
 				289B8CEF18CACD9600017FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		289B8CF018CACD9600017FBF /* Build configuration list for PBXNativeTarget "ios-demo-sprite-kitTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +513,7 @@
 				289B8CF218CACD9600017FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
