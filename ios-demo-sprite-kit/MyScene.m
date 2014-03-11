@@ -10,6 +10,7 @@
 #import "AnimatedSpriteScene.h"
 #import "DragAndDropScene.h"
 #import "MoveActionScene.h"
+#import "PhysicsSimulationScene.h"
 
 @implementation MyScene
 
@@ -67,6 +68,11 @@
     else if ([node.name isEqualToString:@"moveAction"])
     {
         scene = [[MoveActionScene alloc] initWithSize:self.size];
+        [self.scene.view presentScene:scene];
+    }
+    else if ([node.name isEqualToString:@"physicsSimulation"])
+    {
+        scene = [[PhysicsSimulationScene alloc] initWithSize:self.size];
         [self.scene.view presentScene:scene];
     }
     

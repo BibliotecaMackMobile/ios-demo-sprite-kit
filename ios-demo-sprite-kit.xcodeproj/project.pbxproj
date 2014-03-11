@@ -31,6 +31,8 @@
 		289B8CE818CACD9600017FBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 289B8CE618CACD9600017FBF /* InfoPlist.strings */; };
 		289B8CEA18CACD9600017FBF /* ios_demo_sprite_kitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 289B8CE918CACD9600017FBF /* ios_demo_sprite_kitTests.m */; };
 		75AD61DB18CDE6100038FDB6 /* MoveActionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD61DA18CDE6100038FDB6 /* MoveActionScene.m */; };
+		75EAF6D818CF28CE00749124 /* PhysicsSimulationScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EAF6D718CF28CE00749124 /* PhysicsSimulationScene.m */; };
+		75EAF6DA18CF2E7C00749124 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EAF6D918CF2E7C00749124 /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		289B8CE918CACD9600017FBF /* ios_demo_sprite_kitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_demo_sprite_kitTests.m; sourceTree = "<group>"; };
 		75AD61D918CDE6100038FDB6 /* MoveActionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveActionScene.h; sourceTree = "<group>"; };
 		75AD61DA18CDE6100038FDB6 /* MoveActionScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveActionScene.m; sourceTree = "<group>"; };
+		75EAF6D618CF28CE00749124 /* PhysicsSimulationScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsSimulationScene.h; sourceTree = "<group>"; };
+		75EAF6D718CF28CE00749124 /* PhysicsSimulationScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicsSimulationScene.m; sourceTree = "<group>"; };
+		75EAF6D918CF2E7C00749124 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,16 +151,19 @@
 				289B8CCF18CACD9600017FBF /* ViewController.m */,
 				289B8CD118CACD9600017FBF /* MyScene.h */,
 				289B8CD218CACD9600017FBF /* MyScene.m */,
+				75EAF6D618CF28CE00749124 /* PhysicsSimulationScene.h */,
+				75EAF6D718CF28CE00749124 /* PhysicsSimulationScene.m */,
 				28162A5F18CBFE2C007F89B1 /* AnimatedSpriteScene.h */,
+				28162A6018CBFE2C007F89B1 /* AnimatedSpriteScene.m */,
 				75AD61D918CDE6100038FDB6 /* MoveActionScene.h */,
 				75AD61DA18CDE6100038FDB6 /* MoveActionScene.m */,
-				28162A6018CBFE2C007F89B1 /* AnimatedSpriteScene.m */,
 				28162A6818CC297E007F89B1 /* DragAndDropScene.h */,
 				28162A6918CC297E007F89B1 /* DragAndDropScene.m */,
 				28162A5718CBE838007F89B1 /* animatedSprite.png */,
 				28162A5818CBE838007F89B1 /* dragAndDrop.png */,
 				28162A5918CBE838007F89B1 /* moveAction.png */,
 				28162A5A18CBE838007F89B1 /* physicsSimulation.png */,
+				75EAF6D918CF2E7C00749124 /* ball.png */,
 				289B8CD618CACD9600017FBF /* Images.xcassets */,
 				289B8CC018CACD9600017FBF /* Supporting Files */,
 			);
@@ -238,6 +246,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Renan Benevides Cargnin";
 				TargetAttributes = {
+					289B8CB318CACD9600017FBF = {
+						DevelopmentTeam = Z6ADG6ANQU;
+					};
 					289B8CDB18CACD9600017FBF = {
 						TestTargetID = 289B8CB318CACD9600017FBF;
 					};
@@ -269,6 +280,7 @@
 			files = (
 				28162A5E18CBE838007F89B1 /* physicsSimulation.png in Resources */,
 				28162A5D18CBE838007F89B1 /* moveAction.png in Resources */,
+				75EAF6DA18CF2E7C00749124 /* ball.png in Resources */,
 				289B8CC418CACD9600017FBF /* InfoPlist.strings in Resources */,
 				28162A6518CC1F6D007F89B1 /* BearImages.atlas in Resources */,
 				289B8CD718CACD9600017FBF /* Images.xcassets in Resources */,
@@ -294,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28162A6118CBFE2C007F89B1 /* AnimatedSpriteScene.m in Sources */,
+				75EAF6D818CF28CE00749124 /* PhysicsSimulationScene.m in Sources */,
 				289B8CD318CACD9600017FBF /* MyScene.m in Sources */,
 				75AD61DB18CDE6100038FDB6 /* MoveActionScene.m in Sources */,
 				289B8CD018CACD9600017FBF /* ViewController.m in Sources */,
@@ -426,10 +439,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-demo-sprite-kit/ios-demo-sprite-kit-Prefix.pch";
 				INFOPLIST_FILE = "ios-demo-sprite-kit/ios-demo-sprite-kit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,10 +456,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-demo-sprite-kit/ios-demo-sprite-kit-Prefix.pch";
 				INFOPLIST_FILE = "ios-demo-sprite-kit/ios-demo-sprite-kit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
