@@ -47,7 +47,7 @@
     }
     else if ([node.name isEqualToString:@"ball"])
     {
-        [ball.physicsBody applyImpulse:CGVectorMake(0, 100) atPoint:location];
+        [ball.physicsBody applyImpulse:CGVectorMake((location.x - ball.position.x) * -1, 100) atPoint:location];
     }
 }
 
